@@ -1,1 +1,4 @@
-<p>firstname works!</p>
+<mat-form-field appearance="fill">
+    <mat-label>Prénom</mat-label>
+    <input matInput #firstname placeholder="Ex : Antoine" (change)="updateFirstName(firstname.value)">
+</mat-form-field>

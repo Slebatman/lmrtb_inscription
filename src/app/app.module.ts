@@ -9,14 +9,18 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
 import { FirstnameComponent } from './form-input/firstname/firstname.component';
+import { SurnameComponent } from './form-input/surname/surname.component';
 import { WelcomeComponent } from './external-user/welcome/welcome.component';
+import { PersonalInformationComponent } from './external-user/personal-information/personal-information.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     ToolbarComponent,
-    FirstnameComponent
+    FirstnameComponent,
+    SurnameComponent,
+    PersonalInformationComponent
   ],
   imports: [
     BrowserModule,

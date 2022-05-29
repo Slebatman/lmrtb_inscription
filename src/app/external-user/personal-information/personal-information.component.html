@@ -1,0 +1,17 @@
+<div id="personalInformationSection">
+    <!--Title -->
+    <h1>Informations générales</h1>
+
+    <!-- Firstname -->
+    <app-firstname (firstnameEvent)="getFirstname($event)"></app-firstname>
+
+    <!-- Surname -->
+    <app-surname (surnameEvent)="getSurname($event)"></app-surname>
+
+    <!-- Button -->
+    <button mat-raised-button color="primary" (click)="submit()" id="submit">Valider</button>
+
+    <!-- Test only-->
+    <p>Prénom : {{firstname}}</p>
+    <p>Nom : {{surname}}</p>
+</div>
