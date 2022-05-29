@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
@@ -8,7 +8,8 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 })
 export class FirstnameComponent {
 
-  // Output data
+  // Input & Output data
+  @Input() firstname : string = '';
   @Output() firstnameEvent = new EventEmitter<string>();
 
   // Constructor

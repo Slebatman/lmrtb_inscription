@@ -3,10 +3,13 @@
     <h1>Informations générales</h1>
 
     <!-- Firstname -->
-    <app-firstname (firstnameEvent)="getFirstname($event)"></app-firstname>
+    <app-firstname [firstname]="firstname" (firstnameEvent)="getFirstname($event)"></app-firstname>
 
     <!-- Surname -->
-    <app-surname (surnameEvent)="getSurname($event)"></app-surname>
+    <app-surname [surname]="surname" (surnameEvent)="getSurname($event)"></app-surname>
+
+    <!-- Birthdate -->
+    <app-birthday [birthday]="birthday" (birthdayEvent)="getBirthday($event)"></app-birthday>
 
     <!-- Button -->
     <button mat-raised-button color="primary" (click)="submit()" id="submit">Valider</button>
@@ -14,4 +17,6 @@
     <!-- Test only-->
     <p>Prénom : {{firstname}}</p>
     <p>Nom : {{surname}}</p>
+    <p>Anniversaire : {{birthday}}</p>
+
 </div>

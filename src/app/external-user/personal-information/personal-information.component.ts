@@ -10,6 +10,7 @@ export class PersonalInformationComponent implements OnInit {
   // Empty 
   firstname : string = '';
   surname : string = '';
+  birthday : Date = new Date('2005-01-01T03:24:00');
 
   // Constructor 
   constructor() { }
@@ -26,6 +27,11 @@ export class PersonalInformationComponent implements OnInit {
   // Retrive FIRSTNAME from child
   getSurname(surname : string) {
     this.surname = surname;
+  }
+
+  // Retrive BIRTHDATE from child
+  getBirthday(birthday : Date) {
+    this.birthday = birthday;
   }
 
   // Submit()

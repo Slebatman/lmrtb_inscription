@@ -12,6 +12,9 @@ import { FirstnameComponent } from './form-input/firstname/firstname.component';
 import { SurnameComponent } from './form-input/surname/surname.component';
 import { WelcomeComponent } from './external-user/welcome/welcome.component';
 import { PersonalInformationComponent } from './external-user/personal-information/personal-information.component';
+import { BirthdayComponent } from './form-input/birthdate/birthday.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { PersonalInformationComponent } from './external-user/personal-informati
     ToolbarComponent,
     FirstnameComponent,
     SurnameComponent,
-    PersonalInformationComponent
+    PersonalInformationComponent,
+    BirthdayComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,9 +36,10 @@ import { PersonalInformationComponent } from './external-user/personal-informati
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [{provide: MAT_DATE_LOCALE, useValue: 'fr-FR'},],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
