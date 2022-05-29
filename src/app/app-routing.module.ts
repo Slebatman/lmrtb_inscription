@@ -3,7 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './external-user/welcome/welcome.component';
 
 const routes: Routes = [
-  { path : 'welcome', component : WelcomeComponent}
+  // External user
+  { path : 'external/welcome', component : WelcomeComponent},
+  { path : 'external/personal-information', component : WelcomeComponent},
 ];
 
 @NgModule({
