@@ -4,6 +4,7 @@ import { PersonalInformationComponent } from './external-user/personal-informati
 import { WelcomeComponent } from './external-user/welcome/welcome.component';
 
 const routes: Routes = [
+  { path : '', component : WelcomeComponent},
   // External user
   { path : 'external/welcome', component : WelcomeComponent},
   { path : 'external/personal-information', component : PersonalInformationComponent},
