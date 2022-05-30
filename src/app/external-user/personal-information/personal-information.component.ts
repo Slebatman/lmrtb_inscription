@@ -10,7 +10,7 @@ export class PersonalInformationComponent implements OnInit {
   // Empty 
   firstname : string = '';
   surname : string = '';
-  birthday : Date = new Date('2005-01-01T03:24:00');
+  birthday : Date = new Date('2015-01-01T03:24:00');
 
   // Constructor 
   constructor() { }
