@@ -1,0 +1,26 @@
+/* Main section */
+#personalInformationSection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    padding-right: 20px;
+    text-align: justify;
+}
+
+/* Title */
+h1 {
+    font-size: 2.1em;
+    text-align: center;
+    align-self: center;
+}
+
+/* Button next */
+#submit {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-right: 15px;
+    align-self: flex-end;
+}

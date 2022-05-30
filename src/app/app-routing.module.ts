@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { PersonalInformationComponent } from './external-user/personal-information/personal-information.component';
+import { WelcomeComponent } from './external-user/welcome/welcome.component';
 
 const routes: Routes = [
-  { path : 'welcome', component : WelcomeComponent}
+  { path : '', component : WelcomeComponent},
+  // External user
+  { path : 'external/welcome', component : WelcomeComponent},
+  { path : 'external/personal-information', component : PersonalInformationComponent},
 ];
 
 @NgModule({
