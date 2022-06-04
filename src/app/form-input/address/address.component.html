@@ -4,8 +4,8 @@
     <input matInput #streetInput 
         placeholder="Ex : rue de l'église" 
         (change)="updateStreet(streetInput.value)" 
-        value="{{street}}"
-        required="{{required}}"
+        (focusout)="updateStreet(streetInput.value)" 
+        [formControl]="streetValidator"
     >
 </mat-form-field>
 
@@ -15,8 +15,8 @@
     <input matInput #homeNumberInput 
         placeholder="Ex : 9" 
         (change)="updateHomeNumber(homeNumberInput.value)" 
-        value="{{homeNumber}}"
-        required="{{required}}"
+        (focusout)="updateHomeNumber(homeNumberInput.value)" 
+        [formControl]="homeNumberValidator"
     >
 </mat-form-field>
 
@@ -26,8 +26,8 @@
     <input matInput #postalCodeInput 
         placeholder="Ex : 6724 "
         (change)="updatePostalCode(+postalCodeInput.value)" 
-        value="{{postalCode}}"
-        required="{{required}}"
+        (focusout)="updatePostalCode(+postalCodeInput.value)" 
+        [formControl]="postalCodeValidator"
     >
 </mat-form-field>
 
@@ -37,7 +37,7 @@
     <input matInput #villageInput 
         placeholder="Ex : Marbehan" 
         (change)="updateVillage(villageInput.value)" 
-        value="{{village}}"
-        required="{{required}}"
+        (focusout)="updateVillage(villageInput.value)" 
+        [formControl]="villageValidator"
     >
 </mat-form-field>

@@ -3,7 +3,7 @@
     <input matInput #surnameInput 
         placeholder="Ex : Baetslé" 
         (change)="updateSurname(surnameInput.value)" 
-        value="{{surname}}"
-        required="{{required}}"
+        (focusout)="updateSurname(surnameInput.value)" 
+        [formControl]="surnameValidator"
     >
 </mat-form-field>
