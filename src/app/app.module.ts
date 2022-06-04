@@ -15,6 +15,7 @@ import { PersonalInformationComponent } from './external-user/personal-informati
 import { BirthdayComponent } from './form-input/birthdate/birthday.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { AddressComponent } from './form-input/address/address.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     SurnameComponent,
     PersonalInformationComponent,
     BirthdayComponent,
+    AddressComponent,
   ],
   imports: [
     BrowserModule,

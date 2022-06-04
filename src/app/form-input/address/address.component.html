@@ -1,0 +1,39 @@
+<!-- Street -->
+<mat-form-field appearance="fill">
+    <mat-label>Rue</mat-label>
+    <input matInput #streetInput 
+        placeholder="Ex : rue de l'église" 
+        (change)="updateStreet(streetInput.value)" 
+        value="{{street}}"
+    >
+</mat-form-field>
+
+<!-- Home number -->
+<mat-form-field appearance="fill">
+    <mat-label>Numéro</mat-label>
+    <input matInput #homeNumberInput 
+        placeholder="Ex : 9" 
+        (change)="updateHomeNumber(homeNumberInput.value)" 
+        value="{{homeNumber}}"
+    >
+</mat-form-field>
+
+<!-- Postal code -->
+<mat-form-field appearance="fill">
+    <mat-label>Code postal</mat-label>
+    <input matInput #postalCodeInput 
+        placeholder="Ex : 6724 "
+        (change)="updatePostalCode(+postalCodeInput.value)" 
+        value="{{postalCode}}"
+    >
+</mat-form-field>
+
+<!-- Village -->
+<mat-form-field appearance="fill">
+    <mat-label>Village</mat-label>
+    <input matInput #villageInput 
+        placeholder="Ex : Marbehan" 
+        (change)="updateVillage(villageInput.value)" 
+        value="{{village}}"
+    >
+</mat-form-field>

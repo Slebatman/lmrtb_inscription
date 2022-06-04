@@ -11,6 +11,10 @@ export class PersonalInformationComponent implements OnInit {
   firstname : string = '';
   surname : string = '';
   birthday : Date = new Date('2015-01-01T03:24:00');
+  street : string = '';
+  homeNumber : string = '';
+  postalCode : number = 0;
+  village : string = '';
 
   // Constructor 
   constructor() { }
@@ -32,6 +36,26 @@ export class PersonalInformationComponent implements OnInit {
   // Retrive BIRTHDATE from child
   getBirthday(birthday : Date) {
     this.birthday = birthday;
+  }
+
+  // Retrive STREET from child
+  getStreet(street : string) {
+    this.street = street;
+  }
+
+  // Retrive HOME NUMBER from child
+  getHomeNumber(homeNumber : string) {
+    this.homeNumber = homeNumber;
+  }
+
+  // Retrive POSTAL CODE from child
+  getPostalCode(postalCode : number) {
+    this.postalCode = postalCode;
+  }
+
+  // Retrive VILLAGE from child
+  getVillage(village : string) {
+    this.village = village;
   }
 
   // Submit()
