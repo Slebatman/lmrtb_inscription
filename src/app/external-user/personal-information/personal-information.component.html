@@ -1,32 +1,32 @@
 <div id="personalInformationSection">
     <!--Title -->
     <h1>Informations générales de l'enfant</h1>
-
+    <p>Merci de compléter avec les informations générales relatives à votre enfant</p>
     <!-- Surname -->
-    <app-surname 
-        [surname]="surname" 
+    <app-surname
+        [surname]="surname"
         [required]="true"
         (surnameEvent)="getSurname($event)"
         (validityEvent)="getSurnameValidity($event)"
     ></app-surname>
 
     <!-- Firstname -->
-    <app-firstname 
-        [firstname]="firstname" 
+    <app-firstname
+        [firstname]="firstname"
         [required]="true"
         (firstnameEvent)="getFirstname($event)"
         (validityEvent)="getFirstnameValidity($event)"
     ></app-firstname>
 
     <!-- Birthdate -->
-    <app-birthday 
-        [birthday]="birthday" 
+    <app-birthday
+        [birthday]="birthday"
         [required]="true"
         (birthdayEvent)="getBirthday($event)"
     ></app-birthday>
 
     <!-- Firstname -->
-    <app-address 
+    <app-address
         [street]="street" (streetEvent)="getStreet($event)" (streetValidityEvent)="getStreetValidity($event)"
         [homeNumber]="homeNumber" (homeNumberEvent)="getHomeNumber($event)" (homeNumberValidityEvent)="getHomeNumberValidity($event)"
         [postalCode]="postalCode" (postalCodeEvent)="getPostalCode($event)" (postalCodeValidityEvent)="getPostalCodeValidity($event)"
@@ -36,7 +36,7 @@
 
     <!-- Button -->
     <button mat-raised-button color="primary" (click)="submit()" id="submit">Valider</button>
-    
+
     <!-- Test only-->
     <p>Prénom : {{firstname}} ({{firstnameValidity}})</p>
     <p>Nom : {{surname}} ({{surnameValidity}})</p>
