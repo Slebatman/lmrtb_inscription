@@ -27,6 +27,8 @@ export class BirthdayComponent implements OnInit {
 
   // Input & Output data
   @Input() birthday : Date = new Date();
+  @Input() required : boolean = false;
+  
   @Output() birthdayEvent = new EventEmitter<Date>();
 
   // Variables

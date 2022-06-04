@@ -5,6 +5,7 @@
         placeholder="Ex : rue de l'église" 
         (change)="updateStreet(streetInput.value)" 
         value="{{street}}"
+        required="{{required}}"
     >
 </mat-form-field>
 
@@ -15,6 +16,7 @@
         placeholder="Ex : 9" 
         (change)="updateHomeNumber(homeNumberInput.value)" 
         value="{{homeNumber}}"
+        required="{{required}}"
     >
 </mat-form-field>
 
@@ -25,6 +27,7 @@
         placeholder="Ex : 6724 "
         (change)="updatePostalCode(+postalCodeInput.value)" 
         value="{{postalCode}}"
+        required="{{required}}"
     >
 </mat-form-field>
 
@@ -35,5 +38,6 @@
         placeholder="Ex : Marbehan" 
         (change)="updateVillage(villageInput.value)" 
         value="{{village}}"
+        required="{{required}}"
     >
 </mat-form-field>

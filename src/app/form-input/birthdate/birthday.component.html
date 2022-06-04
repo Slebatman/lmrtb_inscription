@@ -4,6 +4,7 @@
         [matDatepicker]="picker" 
         [formControl]="date"
         (dateChange)="updateBirthday($event)"
+        required="{{required}}"
     >
     <mat-hint>jj/mm/aaaa</mat-hint>
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>

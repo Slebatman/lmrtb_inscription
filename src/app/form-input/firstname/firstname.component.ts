@@ -10,6 +10,8 @@ export class FirstnameComponent {
 
   // Input & Output data
   @Input() firstname : string = '';
+  @Input() required : boolean = false;
+  
   @Output() firstnameEvent = new EventEmitter<string>();
 
   // Constructor

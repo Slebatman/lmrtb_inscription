@@ -1,4 +1,9 @@
 <mat-form-field appearance="fill">
     <mat-label>Nom</mat-label>
-    <input matInput #surnameInput placeholder="Ex : Baetslé" (change)="updateSurname(surnameInput.value)" value="{{surname}}">
+    <input matInput #surnameInput 
+        placeholder="Ex : Baetslé" 
+        (change)="updateSurname(surnameInput.value)" 
+        value="{{surname}}"
+        required="{{required}}"
+    >
 </mat-form-field>

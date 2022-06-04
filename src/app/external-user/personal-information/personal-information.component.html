@@ -3,13 +3,25 @@
     <h1>Informations générales de l'enfant</h1>
 
     <!-- Surname -->
-    <app-surname [surname]="surname" (surnameEvent)="getSurname($event)"></app-surname>
+    <app-surname 
+        [surname]="surname" 
+        [required]="true"
+        (surnameEvent)="getSurname($event)"
+    ></app-surname>
 
     <!-- Firstname -->
-    <app-firstname [firstname]="firstname" (firstnameEvent)="getFirstname($event)"></app-firstname>
+    <app-firstname 
+        [firstname]="firstname" 
+        [required]="true"
+        (firstnameEvent)="getFirstname($event)"
+    ></app-firstname>
 
     <!-- Birthdate -->
-    <app-birthday [birthday]="birthday" (birthdayEvent)="getBirthday($event)"></app-birthday>
+    <app-birthday 
+        [birthday]="birthday" 
+        [required]="true"
+        (birthdayEvent)="getBirthday($event)"
+    ></app-birthday>
 
     <!-- Firstname -->
     <app-address 
@@ -17,6 +29,7 @@
         [homeNumber]="homeNumber" (homeNumberEvent)="getHomeNumber($event)"
         [postalCode]="postalCode" (postalCodeEvent)="getPostalCode($event)"
         [village]="village" (villageEvent)="getVillage($event)"
+        [required]="true"
     ></app-address>
 
     <!-- Button -->

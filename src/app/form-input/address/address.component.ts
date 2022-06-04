@@ -12,6 +12,7 @@ export class AddressComponent {
   @Input() homeNumber : string = '';
   @Input() postalCode : number = 0;
   @Input() village : string = '';
+  @Input() required : boolean = false;
 
   @Output() streetEvent = new EventEmitter<string>();
   @Output() homeNumberEvent = new EventEmitter<string>();

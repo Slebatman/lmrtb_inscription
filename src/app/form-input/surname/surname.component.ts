@@ -10,6 +10,8 @@ export class SurnameComponent {
 
   // Input & Output data
   @Input() surname : string = '';
+  @Input() required : boolean = false;
+  
   @Output() surnameEvent = new EventEmitter<string>();
 
   // Constructor
