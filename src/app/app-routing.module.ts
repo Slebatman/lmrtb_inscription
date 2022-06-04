@@ -8,6 +8,7 @@ const routes: Routes = [
   // External user
   { path : 'external/welcome', component : WelcomeComponent},
   { path : 'external/personal-information', component : PersonalInformationComponent},
+  { path : 'external/RGPD', component : WelcomeComponent},
 ];
 
 @NgModule({

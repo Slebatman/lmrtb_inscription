@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-personal-information',
@@ -17,7 +18,9 @@ export class PersonalInformationComponent implements OnInit {
   village : string = '';
 
   // Constructor 
-  constructor() { }
+  constructor(
+    private router : Router
+  ) { }
 
   // OnInit
   ngOnInit(): void {
@@ -60,6 +63,7 @@ export class PersonalInformationComponent implements OnInit {
 
   // Submit()
   submit() {
+    this.router.navigate(['external/RGPD'])
   }
 
 }
